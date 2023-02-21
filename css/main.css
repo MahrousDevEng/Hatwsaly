@@ -1,0 +1,127 @@
+/* Start of Fonts */
+@font-face {
+  font-family: "Noto Kufi Arabic";
+  src: url("../fonts/NotoKufiArabic-Regular.ttf");
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Noto Kufi Arabic";
+  src: url("../fonts/NotoKufiArabic-Bold.ttf");
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+}
+/* End of Fonts */
+
+/* Start of Global Rules */
+:root {
+  --main-color: #00aee6;
+  --main-color-light: #01fafe;
+  --alt-color: #160d68;
+  --alt-color-light: #015cb4;
+  --light: #fff;
+  --dark: #010001;
+  --shadow-sm: rgb(0 0 0 / 20%) 0px 3px 3px -2px,
+    rgb(0 0 0 / 14%) 0px 3px 4px 0px, rgb(0 0 0 / 12%) 0px 1px 8px 0px;
+  --shadow: rgb(0 0 0 / 20%) 0px 3px 5px -1px, rgb(0 0 0 / 14%) 0px 6px 10px 0px,
+    rgb(0 0 0 / 12%) 0px 1px 18px 0px;
+}
+body {
+  font-family: "Noto Kufi Arabic", sans-serif;
+  font-weight: 400;
+  font-size: 14px;
+  background-color: #fafafa;
+  padding-bottom: 1.5rem;
+}
+a {
+  color: inherit;
+  text-decoration: none;
+}
+img {
+  object-fit: contain;
+}
+.text-main {
+  color: var(--main-color);
+}
+.text-alt {
+  color: var(--alt-color);
+}
+/* End of Global Rules */
+
+/* Start of Navbar */
+.navbar {
+  background-image: linear-gradient(var(--alt-color-light), var(--alt-color));
+  color: var(--light);
+}
+/* End of Navbar */
+
+/* Start of Banner */
+.banner {
+  height: 40vh;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: 50% 50%;
+  position: relative;
+  margin-bottom: 65px;
+}
+.banner::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.4);
+}
+.banner .logo-wrapper {
+  position: absolute;
+  right: 30px;
+  bottom: -30px;
+  box-shadow: var(--shadow);
+  border-radius: 4px;
+  overflow: hidden;
+}
+.banner .logo-wrapper img {
+  width: 200px;
+  height: auto;
+}
+/* End of Banner */
+
+/* Start of Contact us */
+.social-contacts {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  padding: 0.25rem;
+  overflow: hidden;
+}
+.social-contacts .social-item {
+  background-color: #f7f7f7;
+  padding: 0.5rem;
+  box-shadow: var(--shadow-sm);
+  border-radius: 4px;
+}
+.social-contacts .social-item a {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+}
+.social-contacts .social-item a img {
+  flex-shrink: 0;
+}
+.social-contacts .social-item:not(:last-of-type) {
+  margin-bottom: 1rem;
+}
+/* End of Contact us */
+
+/* Start of About Us */
+.about-us .info p:not(:last-of-type) {
+  margin-bottom: 0.75rem;
+}
+.about-us .info p:last-of-type {
+  margin-bottom: 0;
+}
+/* End of About Us */
