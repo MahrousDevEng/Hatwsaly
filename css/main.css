@@ -33,7 +33,6 @@ body {
   font-weight: 400;
   font-size: 14px;
   background-color: #fafafa;
-  padding-bottom: 1.5rem;
 }
 a {
   color: inherit;
@@ -97,12 +96,20 @@ img {
   margin: 0;
   padding: 0.25rem;
   overflow: hidden;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
 }
 .social-contacts .social-item {
   background-color: #f7f7f7;
   padding: 0.5rem;
   box-shadow: var(--shadow-sm);
   border-radius: 4px;
+  width: 50px;
+  height: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 .social-contacts .social-item a {
   display: flex;
@@ -111,9 +118,6 @@ img {
 }
 .social-contacts .social-item a img {
   flex-shrink: 0;
-}
-.social-contacts .social-item:not(:last-of-type) {
-  margin-bottom: 1rem;
 }
 /* End of Contact us */
 
@@ -125,3 +129,29 @@ img {
   margin-bottom: 0;
 }
 /* End of About Us */
+
+/* Start of Bottom Nav */
+.bottom-nav {
+  color: var(--light);
+  background-image: linear-gradient(var(--main-color-light), var(--main-color));
+  box-shadow: rgb(0 0 0 / 20%) 0px 3px 3px -2px,
+    rgb(0 0 0 / 14%) 0px 3px 4px 0px, rgb(0 0 0 / 12%) 0px 1px 8px 0px;
+}
+.bottom-nav .bottom-links-wrapper {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+.bottom-nav .bottom-links-wrapper .bottom-link-item {
+  flex-grow: 1;
+}
+.bottom-nav .bottom-links-wrapper .nav-link {
+  font-size: 0.8rem;
+  text-align: center;
+  padding: 0.75rem 0.25rem;
+  font-weight: 700;
+}
+/* End of Bottom Nav */
